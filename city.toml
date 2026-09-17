@@ -1,0 +1,26 @@
+[workspace]
+provider = "claude"
+
+[providers]
+[providers.claude]
+base = "builtin:claude"
+ready_delay_ms = 0
+option_defaults = { permission_mode = "auto-edit" }
+options_schema_merge = "by_key"
+args_append = ["--allowedTools", "Bash(gc hook *)", "Bash(bd show *)", "Bash(bd close *)", "Bash(bd comments add *)", "Bash(python3 scripts/check.py *)", "Bash(python3 -m unittest *)", "Bash(shasum -a 256 *)", "Bash(cp summary.py reports/first-summary.py)"]
+
+[[providers.claude.options_schema]]
+key = "permission_mode"
+label = "Permission Mode"
+type = "select"
+default = "auto-edit"
+[[providers.claude.options_schema.choices]]
+value = "auto-edit"
+label = "Edit demo files; approve listed commands"
+flag_args = ["--permission-mode", "acceptEdits"]
+
+# [mail]
+# retention_ttl controls how long read messages are retained before purge.
+# 0 disables retention; use "168h" for 7 days.
+# "7d" is not a valid Go duration.
+# retention_ttl = "0"

@@ -1,0 +1,11 @@
+{
+  "workflow_id": "ci-2tg",
+  "outcome": "pass",
+  "dependency_order_verified": true,
+  "review_and_test_overlapped": true,
+  "first_code_sha256": "205ce8dfaa73ec6794a6b79d6ac4ac166fea5d7f272191881452421826b4155e",
+  "final_code_sha256": "1d32b350eb9ca9e9c54e0530ccb413d6aefed3c56ef1f8490d64fe23306cc78d",
+  "code_changed": true,
+  "fixed_tests_unchanged": true,
+  "final_tests": 12
+}

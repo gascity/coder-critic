@@ -1,0 +1,421 @@
+[
+  {
+    "id": "ci-2tg",
+    "title": "coder-critic",
+    "description": "Andrew Ng's coding/reflection pattern, with independent review and tests",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T01:01:57Z",
+    "started_at": "2026-09-16T00:10:16Z",
+    "closed_at": "2026-09-16T01:01:57Z",
+    "metadata": {
+      "gc.formula_contract": "graph.v2",
+      "gc.formula_hash": "f4b57c430ea87d4b0574f5b19b4eb93ca8c7db2e207cdff33a71a6b4a76dd596",
+      "gc.formula_name": "coder-critic",
+      "gc.formula_source": "/private/tmp/graph-demo.XUuMnB/city/formulas/coder-critic.toml",
+      "gc.kind": "workflow",
+      "gc.outcome": "pass",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "coder",
+      "gc.session_name": "verifier-ci-g6k",
+      "gc.work_dir": "/tmp/graph-demo.XUuMnB/city"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-2tg",
+        "depends_on_id": "ci-3d2",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 1,
+    "dependent_count": 0,
+    "comment_count": 0
+  },
+  {
+    "id": "ci-3d2",
+    "title": "Finalize workflow",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T01:01:58Z",
+    "closed_at": "2026-09-16T01:01:58Z",
+    "metadata": {
+      "gc.execution_routed_to": "coder",
+      "gc.kind": "workflow-finalize",
+      "gc.outcome": "pass",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "core.control-dispatcher",
+      "gc.step_ref": "coder-critic.workflow-finalize"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-3d2",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:14Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-3d2",
+        "depends_on_id": "ci-wjd",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 1,
+    "dependent_count": 1,
+    "comment_count": 0
+  },
+  {
+    "id": "ci-6g5",
+    "title": "Critique the first implementation",
+    "description": "Read BRIEF.md and summary.py. Review correctness and edge cases independently; do not change code, tests or scripts. Write reports/review.md with the code SHA-256, concrete findings and suggested revisions (or an honest no-findings verdict). Close this review task after recording the report; findings are for the revision task.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "assignee": "critic-ci-cja",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T00:34:12Z",
+    "started_at": "2026-09-16T00:24:37Z",
+    "closed_at": "2026-09-16T00:34:12Z",
+    "close_reason": "Closed",
+    "metadata": {
+      "gc.continuation_group": "pool-workflow",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "critic",
+      "gc.run_target": "critic",
+      "gc.session_affinity": "require",
+      "gc.session_id": "ci-cja",
+      "gc.session_name": "critic-ci-cja",
+      "gc.step_ref": "coder-critic.review",
+      "gc.work_dir": "/tmp/graph-demo.XUuMnB/city"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-6g5",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-6g5",
+        "depends_on_id": "ci-rn7",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 1,
+    "dependent_count": 2,
+    "comment_count": 1
+  },
+  {
+    "id": "ci-9oa",
+    "title": "Revise using the independent review and test results",
+    "description": "Read BRIEF.md, reports/review.md and reports/first-tests.json. Improve summary.py to address supported findings and failures. Preserve reports/first-summary.py. Do not modify tests or scripts. Run tests and record reports/revision.md with findings accepted/rejected, rationale and new code SHA-256. If the existing implementation already meets the brief, report that honestly. Close only your claimed iteration bead when the revision work is done; the controller runs verification and controls the parent.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T00:52:37Z",
+    "closed_at": "2026-09-16T00:52:37Z",
+    "metadata": {
+      "gc.attempt_log": "[{\"action\":\"close\",\"attempt\":\"1\",\"outcome\":\"pass\"}]",
+      "gc.check_mode": "exec",
+      "gc.check_path": "scripts/verify.sh",
+      "gc.check_timeout": "1m",
+      "gc.control_epoch": "1",
+      "gc.controller_error": "",
+      "gc.controller_error_class": "",
+      "gc.controller_retryable": "",
+      "gc.execution_routed_to": "reviser",
+      "gc.kind": "ralph",
+      "gc.max_attempts": "2",
+      "gc.outcome": "pass",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "core.control-dispatcher",
+      "gc.run_target": "reviser",
+      "gc.step_id": "revise",
+      "gc.step_ref": "coder-critic.revise"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-9oa",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-9oa",
+        "depends_on_id": "ci-eo0",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-9oa",
+        "depends_on_id": "ci-qo0",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-9oa",
+        "depends_on_id": "ci-6g5",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 3,
+    "dependent_count": 1,
+    "comment_count": 0
+  },
+  {
+    "id": "ci-eo0",
+    "title": "Test the first implementation",
+    "description": "Run python3 scripts/check.py --record reports/first-tests.json. Do not change code, tests or scripts. Read the output. Add a bead comment summarizing the test result and report location. Close this test-report task even if the code fails tests: this task records evidence, and revision handles failures. Never claim that failed tests passed.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "assignee": "tester-ci-u2z",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T00:25:15Z",
+    "started_at": "2026-09-16T00:24:37Z",
+    "closed_at": "2026-09-16T00:25:15Z",
+    "close_reason": "Closed",
+    "metadata": {
+      "gc.continuation_group": "pool-workflow",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "tester",
+      "gc.run_target": "tester",
+      "gc.session_affinity": "require",
+      "gc.session_id": "ci-u2z",
+      "gc.session_name": "tester-ci-u2z",
+      "gc.step_ref": "coder-critic.test"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-eo0",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-eo0",
+        "depends_on_id": "ci-rn7",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 1,
+    "dependent_count": 2,
+    "comment_count": 1
+  },
+  {
+    "id": "ci-qle",
+    "title": "Step spec for Revise using the independent review and test results",
+    "description": "{\"id\":\"revise\",\"title\":\"Revise using the independent review and test results\",\"description\":\"Read BRIEF.md, reports/review.md and reports/first-tests.json. Improve summary.py to address supported findings and failures. Preserve reports/first-summary.py. Do not modify tests or scripts. Run tests and record reports/revision.md with findings accepted/rejected, rationale and new code SHA-256. If the existing implementation already meets the brief, report that honestly. Close only your claimed iteration bead when the revision work is done; the controller runs verification and controls the parent.\",\"metadata\":{\"gc.run_target\":\"reviser\"},\"needs\":[\"review\",\"test\"],\"ralph\":{\"max_attempts\":2,\"check\":{\"mode\":\"exec\",\"path\":\"scripts/verify.sh\",\"timeout\":\"1m\"}}}",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "spec",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T01:01:58Z",
+    "closed_at": "2026-09-16T01:01:58Z",
+    "close_reason": "workflow cleanup: generated spec sidecar closed with workflow root",
+    "metadata": {
+      "close_reason": "workflow cleanup: generated spec sidecar closed with workflow root",
+      "gc.kind": "spec",
+      "gc.outcome": "pass",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.spec_for": "revise",
+      "gc.spec_for_ref": "revise",
+      "gc.step_ref": "coder-critic.revise.spec"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-qle",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 0,
+    "dependent_count": 0,
+    "comment_count": 0
+  },
+  {
+    "id": "ci-qo0",
+    "title": "Revise using the independent review and test results",
+    "description": "Read BRIEF.md, reports/review.md and reports/first-tests.json. Improve summary.py to address supported findings and failures. Preserve reports/first-summary.py. Do not modify tests or scripts. Run tests and record reports/revision.md with findings accepted/rejected, rationale and new code SHA-256. If the existing implementation already meets the brief, report that honestly. Close only your claimed iteration bead when the revision work is done; the controller runs verification and controls the parent.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "assignee": "reviser-ci-911",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T00:52:30Z",
+    "started_at": "2026-09-16T00:36:05Z",
+    "closed_at": "2026-09-16T00:52:30Z",
+    "close_reason": "Closed",
+    "metadata": {
+      "gc.attempt": "1",
+      "gc.continuation_group": "pool-workflow",
+      "gc.control_for": "revise",
+      "gc.logical_bead_id": "ci-9oa",
+      "gc.ralph_step_id": "revise",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "reviser",
+      "gc.run_target": "reviser",
+      "gc.session_affinity": "require",
+      "gc.session_id": "ci-911",
+      "gc.session_name": "reviser-ci-911",
+      "gc.step_id": "revise",
+      "gc.step_ref": "revise.iteration.1",
+      "gc.work_dir": "/tmp/graph-demo.XUuMnB/city"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-qo0",
+        "depends_on_id": "ci-eo0",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-qo0",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-qo0",
+        "depends_on_id": "ci-6g5",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 2,
+    "dependent_count": 1,
+    "comment_count": 1
+  },
+  {
+    "id": "ci-rn7",
+    "title": "Implement the CSV summary utility",
+    "description": "Read BRIEF.md. Implement summary.py. Run the fixed tests if useful. Save a copy as reports/first-summary.py and write reports/implementation.md describing choices and the code SHA-256. Do not modify tests or scripts. Close this bead when the implementation and snapshot exist.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "assignee": "coder-ci-rr3",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T00:22:04Z",
+    "started_at": "2026-09-16T00:16:55Z",
+    "closed_at": "2026-09-16T00:22:04Z",
+    "close_reason": "Closed",
+    "metadata": {
+      "gc.continuation_group": "pool-workflow",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "coder",
+      "gc.run_target": "coder",
+      "gc.session_affinity": "require",
+      "gc.session_id": "ci-rr3",
+      "gc.session_name": "coder-ci-rr3",
+      "gc.step_ref": "coder-critic.implement",
+      "gc.work_dir": "/tmp/graph-demo.XUuMnB/city"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-rn7",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 0,
+    "dependent_count": 2,
+    "comment_count": 1
+  },
+  {
+    "id": "ci-wjd",
+    "title": "Verify the final artifact",
+    "description": "Run python3 scripts/check.py --record reports/final-tests.json. Confirm all 12 tests pass, compare the first and final code hashes and read both review and revision reports. Write reports/final.md giving actual outcomes and limitations; do not invent a quality improvement if the original passed. Do not change code or tests. Close this bead only on successful final verification.",
+    "status": "closed",
+    "priority": 2,
+    "issue_type": "task",
+    "assignee": "verifier-ci-g6k",
+    "created_at": "2026-09-16T00:10:13Z",
+    "updated_at": "2026-09-16T01:01:52Z",
+    "started_at": "2026-09-16T00:53:33Z",
+    "closed_at": "2026-09-16T01:01:52Z",
+    "close_reason": "Closed",
+    "metadata": {
+      "gc.continuation_group": "pool-workflow",
+      "gc.root_bead_id": "ci-2tg",
+      "gc.root_store_ref": "city:city",
+      "gc.routed_to": "verifier",
+      "gc.run_target": "verifier",
+      "gc.session_affinity": "require",
+      "gc.session_id": "ci-g6k",
+      "gc.session_name": "verifier-ci-g6k",
+      "gc.step_ref": "coder-critic.verify",
+      "gc.work_dir": "/tmp/graph-demo.XUuMnB/city"
+    },
+    "dependencies": [
+      {
+        "issue_id": "ci-wjd",
+        "depends_on_id": "ci-2tg",
+        "type": "tracks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      },
+      {
+        "issue_id": "ci-wjd",
+        "depends_on_id": "ci-9oa",
+        "type": "blocks",
+        "created_at": "2026-09-15T17:10:13Z",
+        "created_by": "Chris Sells",
+        "metadata": "{}"
+      }
+    ],
+    "dependency_count": 1,
+    "dependent_count": 1,
+    "comment_count": 1
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-09-16T00:09:13.599637+00:00",
+  "finished_at": "2026-09-16T00:09:13.801727+00:00",
+  "code_sha256": null,
+  "unchanged_during_test": true,
+  "exit_code": 1,
+  "output": "test_summary (unittest.loader._FailedTest.test_summary) ... ERROR\n\n======================================================================\nERROR: test_summary (unittest.loader._FailedTest.test_summary)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_summary\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py\", line 433, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py\", line 374, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"/private/tmp/graph-demo.XUuMnB/city/tests/test_summary.py\", line 2, in <module>\n    from summary import summarize\nModuleNotFoundError: No module named 'summary'\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+}

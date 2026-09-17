@@ -1,0 +1,8 @@
+{
+  "finding": "CSV parser error normalization",
+  "observed": {
+    "first": "_csv.Error",
+    "final": "builtins.ValueError"
+  },
+  "verified": true
+}

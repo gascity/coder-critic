@@ -1,0 +1,45 @@
+formula = "coder-critic"
+description = "Andrew Ng's coding/reflection pattern, with independent review and tests"
+
+[requires]
+formula_compiler = ">=2.0.0"
+
+[[steps]]
+id = "implement"
+title = "Implement the CSV summary utility"
+description = "Read BRIEF.md. Implement summary.py. Run the fixed tests if useful. Save a copy as reports/first-summary.py and write reports/implementation.md describing choices and the code SHA-256. Do not modify tests or scripts. Close this bead when the implementation and snapshot exist."
+metadata = { "gc.run_target" = "coder" }
+
+[[steps]]
+id = "review"
+title = "Critique the first implementation"
+needs = ["implement"]
+description = "Read BRIEF.md and summary.py. Review correctness and edge cases independently; do not change code, tests or scripts. Write reports/review.md with the code SHA-256, concrete findings and suggested revisions (or an honest no-findings verdict). Close this review task after recording the report; findings are for the revision task."
+metadata = { "gc.run_target" = "critic" }
+
+[[steps]]
+id = "test"
+title = "Test the first implementation"
+needs = ["implement"]
+description = "Run python3 scripts/check.py --record reports/first-tests.json. Do not change code, tests or scripts. Read the output. Add a bead comment summarizing the test result and report location. Close this test-report task even if the code fails tests: this task records evidence, and revision handles failures. Never claim that failed tests passed."
+metadata = { "gc.run_target" = "tester" }
+
+[[steps]]
+id = "revise"
+title = "Revise using the independent review and test results"
+needs = ["review", "test"]
+description = "Read BRIEF.md, reports/review.md and reports/first-tests.json. Improve summary.py to address supported findings and failures. Preserve reports/first-summary.py. Do not modify tests or scripts. Run tests and record reports/revision.md with findings accepted/rejected, rationale and new code SHA-256. If the existing implementation already meets the brief, report that honestly. Close only your claimed iteration bead when the revision work is done; the controller runs verification and controls the parent."
+metadata = { "gc.run_target" = "reviser" }
+[steps.check]
+max_attempts = 2
+[steps.check.check]
+mode = "exec"
+path = "scripts/verify.sh"
+timeout = "1m"
+
+[[steps]]
+id = "verify"
+title = "Verify the final artifact"
+needs = ["revise"]
+description = "Run python3 scripts/check.py --record reports/final-tests.json. Confirm all 12 tests pass, compare the first and final code hashes and read both review and revision reports. Write reports/final.md giving actual outcomes and limitations; do not invent a quality improvement if the original passed. Do not change code or tests. Close this bead only on successful final verification."
+metadata = { "gc.run_target" = "verifier" }

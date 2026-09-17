@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-09-16T00:25:02.756614+00:00",
+  "finished_at": "2026-09-16T00:25:02.800973+00:00",
+  "code_sha256": "205ce8dfaa73ec6794a6b79d6ac4ac166fea5d7f272191881452421826b4155e",
+  "unchanged_during_test": true,
+  "exit_code": 0,
+  "output": "test_bad_headers (test_summary.SummaryTests.test_bad_headers) ... ok\ntest_basic (test_summary.SummaryTests.test_basic) ... ok\ntest_bom_crlf (test_summary.SummaryTests.test_bom_crlf) ... ok\ntest_exact_decimal (test_summary.SummaryTests.test_exact_decimal) ... ok\ntest_extra_columns (test_summary.SummaryTests.test_extra_columns) ... ok\ntest_half_up (test_summary.SummaryTests.test_half_up) ... ok\ntest_header_only (test_summary.SummaryTests.test_header_only) ... ok\ntest_invalid_records (test_summary.SummaryTests.test_invalid_records) ... ok\ntest_negative_zero (test_summary.SummaryTests.test_negative_zero) ... ok\ntest_quoted_comma (test_summary.SummaryTests.test_quoted_comma) ... ok\ntest_round_after_sum (test_summary.SummaryTests.test_round_after_sum) ... ok\ntest_trim_and_case (test_summary.SummaryTests.test_trim_and_case) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.000s\n\nOK\n"
+}
