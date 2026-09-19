@@ -1,0 +1,8 @@
+{
+  "verified": true,
+  "ports": [
+    36191
+  ],
+  "checked_at": "2026-09-19T21:37:58.101750+00:00",
+  "check": "Independent read-only TCP check of retained owned database endpoints"
+}

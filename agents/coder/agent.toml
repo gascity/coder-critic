@@ -1,1 +1,4 @@
 provider = "claude"
+min_active_sessions = 0
+max_active_sessions = 1
+idle_timeout = "30m"

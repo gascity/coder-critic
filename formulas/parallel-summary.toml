@@ -1,0 +1,30 @@
+formula = "parallel-summary"
+description = "Two coding workers implement independent modules; integration waits for both"
+
+[requires]
+formula_compiler = ">=2.0.0"
+
+[[steps]]
+id = "parse"
+title = "Implement CSV record parsing"
+description = "Read BRIEF.md. Implement ONLY records.py and reports/parse.md. Export parse_records(text) with the exact shared contract. The aggregation worker is coding totals.py concurrently; do not edit that file or summary.py. Run python3 scripts/check_parts.py parse until it passes. Record the result and choices in reports/parse.md, then close your claimed bead."
+metadata = { "gc.run_target" = "coder" }
+
+[[steps]]
+id = "aggregate"
+title = "Implement exact decimal aggregation"
+description = "Read BRIEF.md. Implement ONLY totals.py and reports/aggregate.md. Export aggregate(records) with the exact shared contract. The parsing worker is coding records.py concurrently; do not edit that file or summary.py. Run python3 scripts/check_parts.py aggregate until it passes. Record the result and choices in reports/aggregate.md, then close your claimed bead."
+metadata = { "gc.run_target" = "coder-b" }
+
+[[steps]]
+id = "integrate"
+title = "Integrate and verify both implementations"
+needs = ["parse", "aggregate"]
+description = "Read BRIEF.md, records.py, totals.py and both reports. Implement summary.py by composing parse_records and aggregate with the documented summarize API. Both prerequisites are complete, so you may fix their modules if integration exposes a contract mismatch. Run python3 scripts/check_parts.py all until all tests pass. Write reports/integrate.md explaining the handoff and actual results. Keep all tests and scripts unchanged. Close only your claimed iteration bead. The controller independently executes the final check."
+metadata = { "gc.run_target" = "coder" }
+[steps.check]
+max_attempts = 2
+[steps.check.check]
+mode = "exec"
+path = "scripts/verify_parallel.sh"
+timeout = "1m"

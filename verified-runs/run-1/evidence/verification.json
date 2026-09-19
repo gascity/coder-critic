@@ -1,0 +1,14 @@
+{
+  "workflow_id": "p4-ymc",
+  "outcome": "pass",
+  "different_coding_workers": true,
+  "coding_tasks_overlapped": true,
+  "integration_waited_for_both": true,
+  "integration_attempts": 1,
+  "source_sha256": {
+    "records.py": "382d832070a2ab02599af2bdfbe8ffbd2d0f8d3fc6a31df2714dec10e3d3950b",
+    "totals.py": "8eb257a8d4cc14bdfb6ce7109d5d49a6b462451147301ee4588f4f8b768454d9",
+    "summary.py": "727859e001b09202a98beee230757b34b824e5aa90f915c67c0ebb57b700c978"
+  },
+  "tests": 24
+}

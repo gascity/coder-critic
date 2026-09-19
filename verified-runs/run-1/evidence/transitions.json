@@ -1,0 +1,582 @@
+[
+  {
+    "observed_at": "2026-09-19T21:19:37.074935+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bub",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn",
+      "p4-bub",
+      "p4-gij"
+    ],
+    "tmux_alive": false
+  },
+  {
+    "observed_at": "2026-09-19T21:22:11.782175+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bub",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn",
+      "p4-bub",
+      "p4-gij"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:24:59.192892+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bub",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn",
+      "p4-bub"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:25:23.823211+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bub",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:26:30.617985+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "in_progress",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "in_progress",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:27:37.398360+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "in_progress",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "in_progress",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-a15",
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:28:01.893761+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "in_progress",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-a15",
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:29:05.688172+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-a15",
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:29:30.603222+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "open",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:30:15.838506+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "in_progress",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:30:36.378996+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "in_progress",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-0ix",
+      "p4-bkn"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:31:24.296370+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "in_progress",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "open",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [
+      "p4-bkn",
+      "p4-rat"
+    ],
+    "tmux_alive": true
+  },
+  {
+    "observed_at": "2026-09-19T21:32:33.391921+00:00",
+    "steps": [
+      {
+        "id": "p4-ymc",
+        "status": "closed",
+        "assignee": null
+      },
+      {
+        "id": "p4-rat",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-gij",
+        "status": "closed",
+        "assignee": "coder-b-p4-wisp-gjr"
+      },
+      {
+        "id": "p4-bub",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-bkn",
+        "status": "open",
+        "assignee": null
+      },
+      {
+        "id": "p4-a15",
+        "status": "closed",
+        "assignee": "coder-p4-wisp-a65"
+      },
+      {
+        "id": "p4-0ix",
+        "status": "closed",
+        "assignee": null
+      }
+    ],
+    "ready_ids": [],
+    "tmux_alive": true
+  }
+]

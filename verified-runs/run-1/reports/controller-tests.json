@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-09-19T21:30:55.181681+00:00",
+  "part": "all",
+  "source_sha256": {
+    "records.py": "382d832070a2ab02599af2bdfbe8ffbd2d0f8d3fc6a31df2714dec10e3d3950b",
+    "totals.py": "8eb257a8d4cc14bdfb6ce7109d5d49a6b462451147301ee4588f4f8b768454d9",
+    "summary.py": "727859e001b09202a98beee230757b34b824e5aa90f915c67c0ebb57b700c978"
+  },
+  "checks": [
+    {
+      "suite": "tests_parts",
+      "exit_code": 0,
+      "passed": true,
+      "output": "test_basic (test_records.RecordsTests.test_basic) ... ok\ntest_header_only (test_records.RecordsTests.test_header_only) ... ok\ntest_headers (test_records.RecordsTests.test_headers) ... ok\ntest_invalid_rows_and_empty_lines (test_records.RecordsTests.test_invalid_rows_and_empty_lines) ... ok\ntest_malformed_quoting (test_records.RecordsTests.test_malformed_quoting) ... ok\ntest_quoting_and_bom (test_records.RecordsTests.test_quoting_and_bom) ... ok\ntest_case (test_totals.TotalsTests.test_case) ... ok\ntest_empty (test_totals.TotalsTests.test_empty) ... ok\ntest_exact_sum (test_totals.TotalsTests.test_exact_sum) ... ok\ntest_half_up_and_negative (test_totals.TotalsTests.test_half_up_and_negative) ... ok\ntest_invalid (test_totals.TotalsTests.test_invalid) ... ok\ntest_round_once (test_totals.TotalsTests.test_round_once) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.009s\n\nOK\n"
+    },
+    {
+      "suite": "tests",
+      "exit_code": 0,
+      "passed": true,
+      "output": "test_bad_headers (test_summary.SummaryTests.test_bad_headers) ... ok\ntest_basic (test_summary.SummaryTests.test_basic) ... ok\ntest_bom_crlf (test_summary.SummaryTests.test_bom_crlf) ... ok\ntest_exact_decimal (test_summary.SummaryTests.test_exact_decimal) ... ok\ntest_extra_columns (test_summary.SummaryTests.test_extra_columns) ... ok\ntest_half_up (test_summary.SummaryTests.test_half_up) ... ok\ntest_header_only (test_summary.SummaryTests.test_header_only) ... ok\ntest_invalid_records (test_summary.SummaryTests.test_invalid_records) ... ok\ntest_negative_zero (test_summary.SummaryTests.test_negative_zero) ... ok\ntest_quoted_comma (test_summary.SummaryTests.test_quoted_comma) ... ok\ntest_round_after_sum (test_summary.SummaryTests.test_round_after_sum) ... ok\ntest_trim_and_case (test_summary.SummaryTests.test_trim_and_case) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.015s\n\nOK\n"
+    }
+  ],
+  "unchanged_during_test": true,
+  "finished_at": "2026-09-19T21:30:57.173297+00:00",
+  "exit_code": 0
+}

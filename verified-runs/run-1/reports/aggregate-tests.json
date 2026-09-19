@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-09-19T21:26:55.475281+00:00",
+  "part": "aggregate",
+  "source_sha256": {
+    "records.py": "382d832070a2ab02599af2bdfbe8ffbd2d0f8d3fc6a31df2714dec10e3d3950b",
+    "totals.py": "8eb257a8d4cc14bdfb6ce7109d5d49a6b462451147301ee4588f4f8b768454d9"
+  },
+  "checks": [
+    {
+      "suite": "tests_parts",
+      "exit_code": 0,
+      "passed": true,
+      "output": "test_case (test_totals.TotalsTests.test_case) ... ok\ntest_empty (test_totals.TotalsTests.test_empty) ... ok\ntest_exact_sum (test_totals.TotalsTests.test_exact_sum) ... ok\ntest_half_up_and_negative (test_totals.TotalsTests.test_half_up_and_negative) ... ok\ntest_invalid (test_totals.TotalsTests.test_invalid) ... ok\ntest_round_once (test_totals.TotalsTests.test_round_once) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.002s\n\nOK\n"
+    }
+  ],
+  "unchanged_during_test": true,
+  "finished_at": "2026-09-19T21:26:56.180391+00:00",
+  "exit_code": 0
+}

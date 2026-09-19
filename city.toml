@@ -1,23 +1,32 @@
 [workspace]
 provider = "claude"
 
+# This short demo needs two coders, not an LLM database-maintenance worker.
+[[patches.agent]]
+name = "bd.dog"
+suspended = true
+
+# Long-lived-city maintenance is outside this short, fresh-database demo.
+[orders]
+skip = ["mol-dog-compactor", "mol-dog-backup", "mol-dog-phantom-db", "mol-dog-doctor", "mol-dog-stale-db", "dolt-health", "dolt-remotes-patrol"]
+
 [providers]
 [providers.claude]
 base = "builtin:claude"
 ready_delay_ms = 0
-option_defaults = { permission_mode = "auto-edit" }
+option_defaults = { permission_mode = "auto" }
 options_schema_merge = "by_key"
-args_append = ["--allowedTools", "Bash(gc hook *)", "Bash(bd show *)", "Bash(bd close *)", "Bash(bd comments add *)", "Bash(python3 scripts/check.py *)", "Bash(python3 -m unittest *)", "Bash(shasum -a 256 *)", "Bash(cp summary.py reports/first-summary.py)"]
+args_append = ["--allowedTools", "Bash(gc hook *)", "Bash(bd show *)", "Bash(bd ready *)", "Bash(bd update *)", "Bash(bd close *)", "Bash(python3 *)", "Bash(ls *)", "Bash(pwd)", "Bash(echo *)"]
 
 [[providers.claude.options_schema]]
 key = "permission_mode"
 label = "Permission Mode"
 type = "select"
-default = "auto-edit"
+default = "auto"
 [[providers.claude.options_schema.choices]]
-value = "auto-edit"
-label = "Edit demo files; approve listed commands"
-flag_args = ["--permission-mode", "acceptEdits"]
+value = "auto"
+label = "Auto permission classifier for unattended demo work"
+flag_args = ["--permission-mode", "auto"]
 
 # [mail]
 # retention_ttl controls how long read messages are retained before purge.

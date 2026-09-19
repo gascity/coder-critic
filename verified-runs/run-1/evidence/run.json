@@ -1,0 +1,24 @@
+{
+  "outcome": "pass",
+  "started_at": "2026-09-19T21:16:14.538569+00:00",
+  "versions": {
+    "gc": "1.4.1",
+    "bd": "bd version 1.2.2 (Homebrew)",
+    "claude": "2.1.278 (Claude Code)",
+    "tmux": "tmux 3.7c",
+    "dolt": "dolt version 2.3.1\nWarning: you are on an old version of Dolt. The newest version is 2.3.4."
+  },
+  "workflow_id": "p4-ymc",
+  "fixed_files_unchanged": true,
+  "verification_finished_at": "2026-09-19T21:32:39.262145+00:00",
+  "database_cleanup": {
+    "verified": true,
+    "ports": [],
+    "stop_attempts": 0,
+    "quiet_seconds": 15
+  },
+  "supervisor_exit_code": 0,
+  "cleanup_seconds": 59.099,
+  "finished_at": "2026-09-19T21:33:38.379898+00:00",
+  "cleanup_errors": []
+}

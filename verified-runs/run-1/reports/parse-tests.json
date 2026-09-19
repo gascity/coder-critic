@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-09-19T21:26:19.813910+00:00",
+  "part": "parse",
+  "source_sha256": {
+    "records.py": "382d832070a2ab02599af2bdfbe8ffbd2d0f8d3fc6a31df2714dec10e3d3950b"
+  },
+  "checks": [
+    {
+      "suite": "tests_parts",
+      "exit_code": 0,
+      "passed": true,
+      "output": "test_basic (test_records.RecordsTests.test_basic) ... ok\ntest_header_only (test_records.RecordsTests.test_header_only) ... ok\ntest_headers (test_records.RecordsTests.test_headers) ... ok\ntest_invalid_rows_and_empty_lines (test_records.RecordsTests.test_invalid_rows_and_empty_lines) ... ok\ntest_malformed_quoting (test_records.RecordsTests.test_malformed_quoting) ... ok\ntest_quoting_and_bom (test_records.RecordsTests.test_quoting_and_bom) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.008s\n\nOK\n"
+    }
+  ],
+  "unchanged_during_test": true,
+  "finished_at": "2026-09-19T21:26:21.851786+00:00",
+  "exit_code": 0
+}
